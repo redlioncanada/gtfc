@@ -1,0 +1,44 @@
+[16-Feb-2016 06:14:27 UTC] Array
+(
+)
+
+[16-Feb-2016 06:14:28 UTC] PHP Fatal error:  Uncaught exception 'Mandrill_ValidationError' with message 'Validation error: {"message":{"to":[{"email":"Sorry, this field can't be left blank."}]}}' in /home/closetcards/public_html/vendor/mandrill/mandrill/src/Mandrill.php:153
+Stack trace:
+#0 /home/closetcards/public_html/vendor/mandrill/mandrill/src/Mandrill.php(132): Mandrill->castError(Array)
+#1 /home/closetcards/public_html/vendor/mandrill/mandrill/src/Mandrill/Messages.php(80): Mandrill->call('messages/send', Array)
+#2 /home/closetcards/public_html/api/send/index.php(53): Mandrill_Messages->send(Array, false, NULL, NULL)
+#3 {main}
+  thrown in /home/closetcards/public_html/vendor/mandrill/mandrill/src/Mandrill.php on line 153
+[16-Feb-2016 06:14:28 UTC] Array
+(
+)
+
+[16-Feb-2016 06:14:28 UTC] PHP Fatal error:  Uncaught exception 'Mandrill_ValidationError' with message 'Validation error: {"message":{"to":[{"email":"Sorry, this field can't be left blank."}]}}' in /home/closetcards/public_html/vendor/mandrill/mandrill/src/Mandrill.php:153
+Stack trace:
+#0 /home/closetcards/public_html/vendor/mandrill/mandrill/src/Mandrill.php(132): Mandrill->castError(Array)
+#1 /home/closetcards/public_html/vendor/mandrill/mandrill/src/Mandrill/Messages.php(80): Mandrill->call('messages/send', Array)
+#2 /home/closetcards/public_html/api/send/index.php(53): Mandrill_Messages->send(Array, false, NULL, NULL)
+#3 {main}
+  thrown in /home/closetcards/public_html/vendor/mandrill/mandrill/src/Mandrill.php on line 153
+[16-Feb-2016 06:14:44 UTC] Array
+(
+)
+
+[16-Feb-2016 06:14:45 UTC] PHP Fatal error:  Uncaught exception 'Mandrill_ValidationError' with message 'Validation error: {"message":{"to":[{"email":"Sorry, this field can't be left blank."}]}}' in /home/closetcards/public_html/vendor/mandrill/mandrill/src/Mandrill.php:153
+Stack trace:
+#0 /home/closetcards/public_html/vendor/mandrill/mandrill/src/Mandrill.php(132): Mandrill->castError(Array)
+#1 /home/closetcards/public_html/vendor/mandrill/mandrill/src/Mandrill/Messages.php(80): Mandrill->call('messages/send', Array)
+#2 /home/closetcards/public_html/api/send/index.php(53): Mandrill_Messages->send(Array, false, NULL, NULL)
+#3 {main}
+  thrown in /home/closetcards/public_html/vendor/mandrill/mandrill/src/Mandrill.php on line 153
+[16-Feb-2016 06:14:45 UTC] Array
+(
+)
+
+[16-Feb-2016 06:14:46 UTC] PHP Fatal error:  Uncaught exception 'Mandrill_ValidationError' with message 'Validation error: {"message":{"to":[{"email":"Sorry, this field can't be left blank."}]}}' in /home/closetcards/public_html/vendor/mandrill/mandrill/src/Mandrill.php:153
+Stack trace:
+#0 /home/closetcards/public_html/vendor/mandrill/mandrill/src/Mandrill.php(132): Mandrill->castError(Array)
+#1 /home/closetcards/public_html/vendor/mandrill/mandrill/src/Mandrill/Messages.php(80): Mandrill->call('messages/send', Array)
+#2 /home/closetcards/public_html/api/send/index.php(53): Mandrill_Messages->send(Array, false, NULL, NULL)
+#3 {main}
+  thrown in /home/closetcards/public_html/vendor/mandrill/mandrill/src/Mandrill.php on line 153

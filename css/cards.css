@@ -1,0 +1,311 @@
+body {
+    overflow-y: hidden;
+}
+
+body.shared {
+    overflow-x: hidden;
+}
+
+.logo-wrapper .logo, .footerRule img {
+    transform: translateX(-50%);
+    margin-left: 50%;
+}
+
+.logo-wrapper .logo {
+    max-width: 80%;
+}
+
+.instructions-wrapper {
+    padding-left: 0;
+}
+
+.instructions-wrapper .logo {
+    max-width: 90%;
+}
+
+.logo-wrapper .scroll-right {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    border-bottom: 1px solid #b7b7b7;
+}
+
+.row-fluid {
+    white-space: nowrap;
+}
+
+.row-fluid > * {
+    display: inline-block;
+    float: none;
+}
+
+.bodyBack{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.bgcolor{
+    position: absolute;
+    right: 0px;
+    width: 0%;
+    height: 100px;
+}
+
+.bgcolor.card01Color{
+    background-color: #9a4cb9;
+}
+
+.bgcolor.card02Color{
+    background-color: #2a50c6;
+}
+
+.bgcolor.card03Color{
+    background-color: #158d49;
+}
+
+.bgcolor.card04Color{
+    background-color: #fcd741;
+}
+
+.bgcolor.card05Color{
+    background-color: #c6581f;
+}
+
+.bgcolor.card06Color{
+    background-color: #d11820;
+}
+
+body:not('.shared') .card-wrapper {
+    margin-left: 0;
+}
+
+.vertRule {
+    float: none;
+}
+
+.displayFooterRule {
+    padding-top: 35px;
+    padding-bottom: 70px;
+    opacity: 0;
+}
+
+.displayFooterRule .imgHolder {
+    display: table;
+    top 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    margin: auto;
+}
+.displayFooterRule img {
+    float: left;
+}
+
+.footerRule {
+    float: none;
+}
+
+.cardCover {
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    cursor: pointer;
+}
+
+.card {
+  width: auto;
+  max-width: 800px;
+  position: relative;
+  margin: 30px auto;
+  padding: 20px;
+  // -webkit-transition: 1s ease-in-out;
+  // -moz-transition: 1s ease-in-out;
+  // -o-transition: 1s ease-in-out;
+}
+
+.face {
+    position: absolute;
+    pointer-events: none;
+    top: 40px;
+    left: 27%;
+    height: 92%;
+    max-width: 650px;
+    min-width: 300px;
+    -webkit-backface-visibility: visible;
+    -webkit-transition: left 0.3s ease-out;
+    -webkit-transform-origin: 0 0;
+    -moz-backface-visibility: visible;
+    -moz-transition: left 0.3s ease-out;
+    -moz-transform-origin: 0 0;
+    -ms-backface-visibility: visible;
+    -ms-transition: left 0.3s ease-out;
+    -ms-transform-origin: 0 0;
+}
+
+.face img {
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.1);
+}
+
+.back.face img {
+    box-shadow: 0px 0px 120px 5px rgba(0, 0, 0, 0.1);
+}
+
+.front {
+    z-index: 3;
+}
+.inside {
+    opacity: 0;
+    z-index: 1;
+}
+.back {
+    z-index: 2;
+}
+
+.openIcon {
+    z-index: 0;
+    position: absolute;
+    right: 12%;
+    bottom: 19%;
+    cursor: pointer;
+    width: 5%;
+}
+.shareIcon {
+    display: none;
+}
+
+.cardFace{
+    width: inherit;
+    height: inherit;
+}
+
+.cardform{
+    width: 295px;
+    padding: 25px;
+    position: absolute;
+    top: 20px;
+    border: 1px solid #bcbcbc;
+    border-radius: 4px;
+    top: 23%;
+    right: 280px;
+    opacity: 0;
+    background: white;
+}
+
+@media (max-width: 960px) {
+    .cardform {
+        top 10px;
+        width: 210px;
+        padding: 12px;
+    }
+    .cardform * {
+        font-size: 10px !important;
+    }
+}
+
+.cardform .row {
+    padding-top: 3px;
+    padding-bottom: 1px;
+}
+
+.cardform h2{
+    font-size: 16px;
+    text-align: center;
+    margin-top: 0;
+}
+
+.cardform .full-size {
+    width: 100%;
+    background: black;
+    color: white;
+}
+
+.cardform form .col-md-6 {
+    padding-left: 2px !important;
+    padding-right: 2px !important;
+}
+
+.cardform .close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 12px;
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+}
+
+.twshare, .fbshare {
+    cursor: pointer;
+}
+
+.cardBlackout {
+    display: none;
+}
+
+.shared-footer {
+    position: fixed;
+    left: 15px;
+    bottom: 0;
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    // .face {
+    //     left: 9%;
+    //     width: 92%;
+    // }
+    .openIcon, .shareIcon {
+        width: 8%;
+        right: 10%;
+    }
+    .shareIcon {
+        display: inline;
+        z-index: 0;
+        position: absolute;
+        bottom: 29%;
+        cursor: pointer;
+    }
+    .cardform {
+        top: 125px;
+        right: 86px;
+        z-index: 10;
+        display: none;
+        opacity: 1;
+    }
+    // .cardBlackout {
+    //     display: block;
+    //     position: absolute;
+    //     width: 102%;
+    //     height: 100%;
+    //     left: 100%;
+    //     top: 0;
+    //     z-index: 9;
+    // }
+}
+// @media only screen and (max-width: 420px) {
+//     .logo img {
+//         -o-transform: scale(1.5);
+//         -ms-transform: scale(1.5);
+//         -moz-transform: scale(1.5);
+//         -webkit-transform: scale(1.5);
+//         transform: scale(1.5);
+//     }
+//     .logo {
+//         padding-top: 25%;
+//     }
+// }
+@media only screen and (max-width: 340px) {
+    .cardform {
+        top: 85px;
+        right: 53px;
+        z-index: 10;
+        display: none;
+        opacity: 1;
+    }
+}
